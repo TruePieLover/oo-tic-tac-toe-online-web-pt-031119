@@ -66,13 +66,13 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBOS.each do |el|
-    win_position_1 = el[0]
-    win_position_2 = el[1]
-    win_position_3 = el[2]
+    WIN_COMBOS.each do |e|
+    win_position_1 = e[0]
+    win_position_2 = e[1]
+    win_position_3 = e[2]
 
     if @board[win_position_1] == @board[win_position_2] && @board[win_position_2] == @board[win_position_3] && @board[win_position_1] != " "
-        return el
+        return e
       end
     end
     false
